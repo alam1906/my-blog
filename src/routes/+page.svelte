@@ -60,7 +60,7 @@
 									<div class="font-normal text-teal-700">{`#${blog.category}`}</div>
 									<div class="text-xl font-semibold">{blog.title}</div>
 									<div class="my-2 line-clamp-3 text-sm text-gray-500">
-										{@html blog.description}
+										{@html blog.description.slice(0, 300)}
 									</div>
 									<div class="mb-2 flex cursor-pointer items-center space-x-1">
 										<div class="font-semibold text-teal-700">Read More</div>

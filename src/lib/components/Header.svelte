@@ -15,12 +15,14 @@
 					<input type="text" placeholder="Search blog" class="px-3 py-0" />
 				</div>
 				<button
+					aria-label="search"
 					onclick={changeIsSearch}
 					class="cursor-pointer rounded-md bg-teal-500 px-5 text-white">Find</button
 				>
 			</div>
 		{:else}
-			<button onclick={changeIsSearch} class="cursor-pointer"><Search /></button>
+			<button aria-label="search" onclick={changeIsSearch} class="cursor-pointer"><Search /></button
+			>
 		{/if}
 	</div>
 </div>
